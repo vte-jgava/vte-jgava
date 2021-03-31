@@ -1,0 +1,824 @@
+VERSION:055_5
+TN  NN 1006TParametros de Entrada                   C00000 00
+*$2019-07-19 09:46:02NICOLAS
+ NNNNN 00488   EMPRESA                                           INNNNI000007015200300302021011000000007000700300137000
+/V=organization
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-26 19:29:53NICOLAS
+ NNNNN 01980   NRO CONTA                                         INNNNI000007015200300302021011000000007000700300137000
+/V=capitalAccount
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-26 19:29:53NICOLAS
+ NNNNN 00533   jtsOID                                            INNNNI000007015200300302021011000000007000700300137000
+/V=jtsOID
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 11:31:23BRAZEIRO
+ NNNNN 01236   amount                                            INNNNI000007015200300302021011000000007000700300137000
+/V=amount
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-23 09:58:04NICOLAS
+ NNNNN 04968   transactionId                                     INNNNI000007015200300302021011000000007000700300137000
+/V=transactionId
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-23 10:25:25NICOLAS
+ NNNNN 04165   Numero 05                                         INNNNI000007015200300302021011000000007000700300137000
+/V=item
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 08:48:30NICOLAS
+ NNNNN 02613   tipo_conta                                        INNSNI000176004401960108001000000000148004401680127000
+/V=accountType
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-03 19:26:50NICOLAS
+*N  NN *** Informar 8383 no lugar da oper chamadora nos eventos (C9503)
+*$2021-01-20 12:24:30JOSEGAVA
+ NSSNS 03595   OPER8383                                          INNNNK000011009400310129020011000000011001300310076000
+/V=8383
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-20 09:31:01JOSEGAVA
+CNNNNN   00000000000000000000100
+/?=C1236.1>0YA(C9503="2302")
+/P=I260
+/M=Abrir conta capital a pagar por juros
+*$2021-01-20 09:29:34JOSEGAVA
+CNNNNN   00000000000000000000100
+/?=C1236.1>0YA(C9503="2304")
+/P=I270
+/M=Abrir conta capital a pagar por Sobras
+*$2021-01-18 17:53:05JOSEGAVA
+CNNNNN   00000000000000000000100
+/?=C2613=51
+/P=I51
+/M=Conta Corrente
+*$2020-12-03 19:27:57NICOLAS
+TN  NN 1006TSaldos                                  C00210 00
+*$2020-04-30 11:35:20BRAZEIRO
+ NNNNN 01810   OID Saldo                                         INNNNA000007015200300302021011000000007000700300137000
+/V=C533.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 11:35:20BRAZEIRO
+ NNNNN 01658   FchEncerramento                                   INNNN 000007015200300452001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 11:35:20BRAZEIRO
+ NSSNN 01504   Cód. Cliente                                      INNNNA000007015200300302021011000000007000700300137000
+/?=I260OI270
+/V=C1803.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:54:11JOSEGAVA
+ NSSNN 01507   Fecha Alta                                        INNNN 000007015200300302021011000000007000700300137000
+/?=I260OI270
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:54:17JOSEGAVA
+ NNNNN 01401   Numero Persona                                    INNNNA000007013300270243000011000000007000700270126000
+/?=I260OI270
+/V=C1505.0
+/F=0008400NNN000000000Arial                                   
+/f=0008400NNN000000000Arial                                   
+*$2021-01-18 17:54:22JOSEGAVA
+ NNNNN 01421   Nome                                              INNNN 000007015200300452001011000000007000700300137000
+/?=I260OI270
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:54:30JOSEGAVA
+ NNNNN 01854   Nro Persona                                       INNNNA000007015200300302021011000000007000700300137000
+/?=I260OI270
+/V=C1505.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:54:37JOSEGAVA
+ NNNNN 01855   Tipo Documento                                    INNNNK000007015200300202001011000000007000700300137000
+/?=I260OI270
+/V=CPF
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:54:43JOSEGAVA
+ NNNNN 02512   UF                                                INNNN 000007015200300202001011000000007000700300137000
+/?=I260OI270
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:54:49JOSEGAVA
+TN  NN 1008TConsulta Conta Capita a Pagar do ClienteS00210 00
+/O=C1593 DESC
+/F=C1595=0 and C1594=C9523 and C1596=0 and C90317=C488.1 and C1803=C1803.2
+*$2020-05-27 18:37:07NICOLAS
+ NNNNN 01592   Produto                                           INNSNK000007013600270376000011000000007000700270112000
+/V=999
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 16:40:29BRAZEIRO
+ NNNNN 01611   Intereses Dev                                     INNSN 000007013600270376000011000000007000700270112000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-29 15:37:10BRAZEIRO
+ NNNNN 01593   Cuenta                                            INNSN 000007013600270376000011000000007000700270112000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-29 15:37:10BRAZEIRO
+CNNNNN   00000000000000000000100
+/F=C9509=1
+/P=I250
+/M=Conta capital a pagar existe
+*$2020-04-29 15:37:10BRAZEIRO
+TN  NN 0007TAlta Automática de Saldos               T00211 00
+*$2019-08-02 13:02:30NICOLAS
+ NSSNS 00001   Agencia                                           INNNNA000011009400310129020011000000011001300310076000
+/V=C1591.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 11:37:27BRAZEIRO
+ NNNNN 00007   Producto                                          INNNNK000050014400700172020010000000050001100700137000
+/V=999
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2020-04-30 17:00:49BRAZEIRO
+ NNNNN 06251   Descricao                                         INNNN 000050014400700172020010000000050001100700137000
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2019-07-19 14:07:05NICOLAS
+ NNNNN 00004   Rubro Operativo                                   INNNNA000101059801210696020010000000101047201210598000
+/V=C6271
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00005   Cuenta                                            INNNNA000007015200300302021011000000007000700300137000
+/?=!I250
+/V=C1593.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-27 18:42:47NICOLAS
+ NNNNN 00005   Cuenta                                            INNNNA000007015200300302021011000000007000700300137000
+/?=I250
+/V=C1593.3
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-27 18:42:37NICOLAS
+ NSSNS 00003   Moneda                                            INNNNK000052014600720227020011000000053001200730138000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NSSNS 06401   Simbolo Moneda                                    INNNN 000052014600720227020011000000053001200730138000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00006   Operación                                         INNNNK000119014701440247020010000000119001301390139000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00008   Ordinal                                           INNNNK000007013300270154020010000000007000700270133000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NSSNS 00002   Cliente                                           INNNNA000007013300270217020010000000007000700270133000
+/V=C1803.2
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2020-05-26 14:58:11NICOLAS
+ NSSNN 01002   Nomb.Reducido                                     INNSN 000007015200270572000011000000007000900080128000
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00023   Caja/Diario                                       INNSNK000007015000270210000011000000007000700270126000
+/V=D
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NSSNN 00024   Debito/Credito                                    INNSNK000007015000270210000011000000007000700270126000
+/V=C
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00025   Fecha Valor                                       INNNNA000078014600980246021011000000078001200980085000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00022   Sector (Dpto)                                     INNNN 000007013300270147020010000000007000700270133000
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NSSNS 00029   Importe                                           INNNNA000146014701710287020011000000146001301660139000
+/V=C1604.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-26 20:02:54NICOLAS
+ NSSNS 00029   Importe                                           INNNNA000146014701710287020011000000146001301660139000
+/?=I260OI270
+/V=C1236.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:58:09JOSEGAVA
+ NNNNN 01694   Visualizable                                      INNNNK000007013300270231020010000000007000700270133000
+/V=V
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 01803   Nro. Cliente                                      INNNNA000007013300270217020010000000007000700270133000
+/V=C0002
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 01804   Rubro Operativo                                   INNNNA000007013300270231020010000000007000700270133000
+/V=C0004
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 01730   Rubro Contable                                    INNNNA000007013300270231020010000000007000700270133000
+/V=C6326
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 01785   Tipo Producto                                     INNNNA000007013300270231020010000000007000700270133000
+/V=C6252
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 01679   Bloqueo/Afect                                     INNSNK000007015200300202001011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 01728   Cod. oper. vcdo                                   INNNNK000007015200300202001011000000007000700300137000
+/V= 
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 06676   Marca Adm.                                        INNNNK000007015200300202001011000000007000700300137000
+/V=A
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-25 16:26:56NICOLAS
+ NNNNN 00030   Equivalente M/N                                   INNSN 000007013600270376020011000000007000700270112000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00850                                                     INNSNK000007015000270870000011000000007000700270126000
+/V=topform.bmp
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 00028   Concepto                                          INNNNF000007013300270343000010000000007000700270133000
+/V="ABERTURA DA CONTA A PAGAR "+ C0005
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2020-05-26 20:03:35NICOLAS
+ NNNNN 00300   Monto Esc l­n 1                                   INNSN 000007015000270870000011000000007000700270126000
+/f=0013700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ N  NN 02621   OID Saldo                                         INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NNNNN 01810   OID Saldo                                         INNNNA000007015200300302021011000000007000700300137000
+/V=C2621
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-10 17:34:24NICOLAS
+ NSSNN 90317   Empresa Saldo                                     INNNNA000007015200300202021011000000007000700300137000
+/V=C90317.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 16:53:51BRAZEIRO
+ NSSNN 90318   Suc_Empr Saldo                                    INNNNA000007015200300202021011000000007000700300137000
+/V=C90318.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 16:53:55BRAZEIRO
+ NNNNN 09500   Fecha Sistema                                     INNNN 000007015200300302001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-09 15:13:10BRAZEIRO
+ NNNNN 09507   Nro de Asiento                                    INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-09 15:13:10BRAZEIRO
+ NNNNN 09502   Sucursal Sist.                                    INNNN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-09 15:13:10BRAZEIRO
+ NNNNN 03047   Fecha                                             INNSNA000007015200300302001011000000007000700300137000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-09 15:13:10BRAZEIRO
+ NNNNN 00772   Aux SWIFT A8                                      INNSNA000007015200300302001011000000007000700300137000
+/V=C3047
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-09 15:13:10BRAZEIRO
+ NNNNN 00904   ID Comprobante                                    INNNNF000007015200300452001011000000007000700300137000
+/V=C9507+""+C772+""+C9502+""+C90317.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 17:01:46BRAZEIRO
+ NNNNN 00904   ID Comprobante                                    INNNNF000007015200300452001011000000007000700300137000
+/?=I260OI270
+/V=C4968.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-18 17:58:26JOSEGAVA
+ NNNNN 90326   IdComprobante                                     INNNNA000395002304180158021010000000375002103950125000
+/V=C904
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-03-09 15:50:56BRAZEIRO
+ NNNNN 00437   Numerico de 6                                     INNNNK000007015200300302021011000000007000700300137000
+/V=1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 17:17:36BRAZEIRO
+ NNNNN 00437   Numerico de 6                                     INNNNK000007015200300302021011000000007000700300137000
+/?=I260
+/V=3
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-20 11:49:34JOSEGAVA
+ NNNNN 00437   Numerico de 6                                     INNNNK000007015200300302021011000000007000700300137000
+/?=I270
+/V=5
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-20 11:49:56JOSEGAVA
+CNNNNN  S00000000000000000000100
+/R=jts:service:trCodeFinder=CodigoTransaccion,trcodefind,C3595.1 I, C0437 I, C0041 O
+*$2021-01-20 12:29:08JOSEGAVA
+ NNNNN 00041   Cod Transaccion                                   INNNN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 17:17:26BRAZEIRO
+TN  NN 0003TDébito de Vista                         O00211 00
+/?=!I260Y!I270
+*$2021-01-18 17:59:32JOSEGAVA
+ NSSNS 00001   Agência                                           INNNNA000132002201550118021011000000116002101390109000
+/V=C1591.4
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 16:54:11BRAZEIRO
+ NSSNS 00007   Producto                                          INNNNA000174014401970240021010000000174003501970123000
+/V=C0007.2
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 16:54:33BRAZEIRO
+ NNNNN 06251   Descricao                                         INNNN 000050014400700172020010000000050001100700137000
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2019-07-19 17:02:07NICOLAS
+ NSSNS 00003   Moneda                                            INNNNA000112019601350292021011000000112008701350175000
+/V=C9523
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 16:54:59BRAZEIRO
+ NSSNS 06400   Descripción                                       INNNN 800112032001350478001011000000155026001750400000
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NNNNN 06401   Sðmbolo Moneda                                    INNSN 000007018600310251001011000000007000700310160000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NNNNN 00004   Rubro Operativo                                   INNNNA000212050102320599021010000000212036802320494000
+/V=C6271
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NSSNS 00005   Conta                                             INNNNA000229002102520125021011000000211002102310109000
+/V=C1593.2
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 16:55:19BRAZEIRO
+ NSSNS 00006   Operación                                         INNNNA000096041701160501021011000000096025201160378000
+/V=C006.0
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:41:15NICOLAS
+ NNNNN 00008   Ordinal                                           INNNNA000007014700270168021010000000007000700270133000
+/V=C008.0
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:41:22NICOLAS
+ N  NN 01600   Monto Original                                    INNSN 000007015200300302021011000000007000700300137000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NNNNN 00002   Cliente                                           INNSNA000007013300270238001011000000007000700270119000
+/V=C1803.4
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:17:43NICOLAS
+ NNNNN 01601   Capital Origin                                    INNSN 000007013600270376001011000000007000700270112000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NNNNN 00024   Débito/Crédito                                    INNNNK000007015700270164001010000000007000700270133000
+/V=D
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NNNNN 00023   Caja/Diario                                       INNNNK000007015700270164001010000000007000700270133000
+/V=D
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NNNNN 00022   Sector (Dpto)                                     INNNN 000007014300270157021010000000007001000270136000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NSSNS 00025   Fecha Valor                                       INNNNA000138014701580217001010000000138001401580140000
+/V=C9500
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:40:41NICOLAS
+ NNNNN 00027   Referencia                                        INNNNA000007015200300302021011000000007000700300137000
+/V=C1593.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-11 14:42:19NICOLAS
+ NNNNN 00029   Valor a Debitar                                   INNNNA000395002304180158021010000000375002103950125000
+/V=C29.4
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2019-07-11 14:44:39NICOLAS
+ NSSNN 90317   Empresa Saldo                                     INNNNA000007015200300202021011000000007000700300137000
+/V=C90317.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 16:56:10BRAZEIRO
+ NSSNN 90318   Suc_Empr Saldo                                    INNNNA000007015200300202021011000000007000700300137000
+/V=C90318.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 16:56:14BRAZEIRO
+ NSSNN 75002   Linha                                             INNNNA000007015200300202021011000000007000700300137000
+/V=C904.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-09 15:19:49BRAZEIRO
+ NNNNN 90326   IdComprobante                                     INNNNA000395002304180158021010000000375002103950125000
+/V=C75002
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-03-09 15:36:30BRAZEIRO
+ NNNNN 00437   Numerico de 6                                     INNNNK000007015200300302021011000000007000700300137000
+/V=2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 17:21:47BRAZEIRO
+CNNNNN  S00000000000000000000100
+/R=jts:service:trCodeFinder=CodigoTransaccion,trcodefind,C3595.1 I, C0437 I, C0041 O
+*$2021-01-20 14:16:45JOSEGAVA
+ NNNNN 00041   Cod Transaccion                                   INNNN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 17:22:01BRAZEIRO
+ NNNNN 00028   Concepto                                          INNNNF000007013300270343000010000000007000700270133000
+/V=C0028.4
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2020-05-26 20:05:37NICOLAS
+TN  NN 0007TAlta Automática de Saldos               T00211 00
+/?=I260OI270
+*$2021-01-18 17:59:52JOSEGAVA
+ NSSNS 00001   Agência                                           INNNNA000132002201550118021011000000116002101390109000
+/V=C1591.4
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NSSNS 00007   Producto                                          INNNNK000174014401970240021010000000174003501970123000
+/V=0
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:18:08NICOLAS
+ NNNNN 06251   Descricao                                         INNNN 000050014400700172020010000000050001100700137000
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2020-11-24 10:16:39NICOLAS
+ NSSNS 00003   Moneda                                            INNNNA000112019601350292021011000000112008701350175000
+/V=C9523
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NSSNS 06400   Descripción                                       INNNN 800112032001350478001011000000155026001750400000
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 06401   Sðmbolo Moneda                                    INNSN 000007018600310251001011000000007000700310160000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00004   Rubro Operativo                                   INNNNA000212050102320599021010000000212036802320494000
+/V=C4165.1
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:18:13NICOLAS
+ NSSNS 00005   Conta                                             INNNNA000229002102520125021011000000211002102310109000
+/V=C4165.1
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:18:18NICOLAS
+ NSSNS 00006   Operación                                         INNNNA000096041701160501021011000000096025201160378000
+/V=C006.0
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00008   Ordinal                                           INNNNA000007014700270168021010000000007000700270133000
+/V=C008.0
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ N  NN 01600   Monto Original                                    INNSN 000007015200300302021011000000007000700300137000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 01601   Capital Origin                                    INNSN 000007013600270376001011000000007000700270112000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00024   Débito/Crédito                                    INNNNK000007015700270164001010000000007000700270133000
+/V=D
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00023   Caja/Diario                                       INNNNK000007015700270164001010000000007000700270133000
+/V=D
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00022   Sector (Dpto)                                     INNNN 000007014300270157021010000000007001000270136000
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NSSNS 00025   Fecha Valor                                       INNNNA000138014701580217001010000000138001401580140000
+/V=C9500
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00027   Referencia                                        INNNNA000007015200300302021011000000007000700300137000
+/V=C1593.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00029   Valor a Debitar                                   INNNNA000395002304180158021010000000375002103950125000
+/V=C29.4
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NSSNN 90317   Empresa Saldo                                     INNNNA000007015200300202021011000000007000700300137000
+/V=C90317.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:16:39NICOLAS
+ NSSNN 90318   Suc_Empr Saldo                                    INNNNA000007015200300202021011000000007000700300137000
+/V=C90318.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:16:39NICOLAS
+*N  NN *****Campos para tratamento do EVENTO INICIO ****
+*$2020-12-04 17:56:36NICOLAS
+ NSSNN 75002   Linha                                             INNNNA000007015200300202021011000000007000700300137000
+/V=C904.4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 90326   IdComprobante                                     INNNNA000395002304180158021010000000375002103950125000
+/V=C75002
+/C=255255255
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 03649   DataPagamento                                     INNNNA000007015200300302001011000000007000700300137000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 17:55:03NICOLAS
+ NNNNN 99568   ProdutoID                                         INNNNK000007015200300202001011000000007000700300137000
+/V=999
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 17:55:03NICOLAS
+ NNNNN 01382   empresa                                           INNNNF000007015200300452001011000000007000700300137000
+/V=C488.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 17:57:05NICOLAS
+ NNNNN 04356   numero_conta                                      INNNNF000007015200300452001011000000007000700300137000
+/V=C1980.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 17:57:34NICOLAS
+ NNNNN 03498   TipoDocumento                                     INNNNF000007015200300452001011000000007000700300137000
+/V=C1855.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 17:58:15NICOLAS
+ NNNNN 99526   numero_docto                                      INNNNF000007015200300452001011000000007000700300137000
+/V=C1856.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 17:58:21NICOLAS
+ NNNNN 00683   valor                                             INNNNA000007015200300452001011000000007000700300137000
+/V=C1236.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 17:59:03NICOLAS
+*N  NN *****Campos para tratamento do EVENTO FIN ****
+*$2020-12-04 17:55:03NICOLAS
+ NNNNN 00437   Numerico de 6                                     INNNNK000007015200300302021011000000007000700300137000
+/V=4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-20 12:21:03JOSEGAVA
+ NNNNN 00437   Numerico de 6                                     INNNNK000007015200300302021011000000007000700300137000
+/?=I270
+/V=6
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-20 12:20:25JOSEGAVA
+CNNNNN  S00000000000000000000100
+/R=jts:service:trCodeFinder=CodigoTransaccion,trcodefind,C3595.1 I, C0437 I, C0041 O
+*$2021-01-20 11:22:58JOSEGAVA
+ NNNNN 00041   Cod Transaccion                                   INNNN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:16:39NICOLAS
+ NNNNN 00028   Concepto                                          INNNNF000007013300270343000010000000007000700270133000
+/V=C0028.4
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+*$2020-11-24 10:16:39NICOLAS
+ NSSNS 00028   Concepto                                          INNNNK000166040001860624001011002000166032101860396000
+/?=I270
+/V=DISTR. SOBRAS|CONTA TRANSITORIA
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2021-01-19 12:21:05JOSEGAVA
+TN  NN 1009TEncerrar a Conta Capital                M00211 00
+/?=!I260Y!I270
+*$2021-01-18 18:00:15JOSEGAVA
+ NNNNN 01810   OID Saldo                                         INNNNA000007015200300302021011000000007000700300137010
+/V=C1810.2
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 11:36:31BRAZEIRO
+ NNNNN 06676   Marca Adm.                                        INNNNK000007015200300302021011000000007000700300137010
+/V=E
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 11:29:48BRAZEIRO
+ NNNNN 01658   FchEncerramento                                   INNNNA000007015200300202001011000000007000700300137010
+/V=C9500
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 11:29:48BRAZEIRO
+ NNNNN 01651   Codigo Cancel                                     INNNNK000007015200300202001011000000007000700300137010
+/V=1
+/F=0013400NNN000000000Microsoft Sans Serif                    
+/f=0013400NNN000000000Microsoft Sans Serif                    
+*$2020-04-30 11:29:48BRAZEIRO
+TN  NN 1006TConsulta tabela de erros                C00000 00
+*$2019-07-19 15:28:40NICOLAS
+ NNNNN 00420   codRetorno                                        INNNNK000007015200300302001011000000007000700300137000
+/V=OK
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-27 22:05:58NICOLAS
+ NNNNN 00616   Numerico 3                                        INNNNK000007015200300452001011000000007000700300137000
+/V=200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-27 21:58:47NICOLAS
+TN  NN 1006TExibir Informações da Conta Criada      C00000 00
+*$2019-07-19 15:28:40NICOLAS
+ NNNNN 99980   RETORNO                                           INNNNA000007015200300302001011000000007000700300137000
+/V=C420.8
+/P=RETORNO
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-24 17:45:46NICOLAS
+ NNNNN 99982   ERR_TYPE                                          INSNNK000007015200300302001011000000007000700300137000
+/V=NEG
+/P=ERR_TYPE
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-19 15:28:40NICOLAS
+ NNNNN 99983   ERR_SUBTYPE                                       INSNNK000007015200300302001011000000007000700300137000
+/V=VALIDACAO
+/P=ERR_SUBTYPE
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-19 15:28:40NICOLAS
+ NNNNN 99984   MSG_ERROR                                         INSNNA000007015200300452001011000000007000700300137000
+/V=C30062.8
+/P=MSG_ERROR
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2019-07-24 17:45:51NICOLAS
+ NNNNN 00616   ERR_HTTP_CODE                                     INSNNA000007015200300452001011000000007000700300137000
+/V=C616.8
+/P=ERR_HTTP_CODE
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 14:21:55BRAZEIRO
+ NNNNN 00503   saldo                                             INSNNA000007015200300302021011000000007000700300137000
+/V=C29.4
+/P=balance
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:42:13NICOLAS
+ NNNNN 00503   saldo                                             INSNNA000007015200300302021011000000007000700300137000
+/?=I270
+/V=C29.4
+/P=amount
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-19 08:34:58JOSEGAVA
+ NNNNN 02487   Alfanum 60                                        INNNNF000007015200300452001011000000007000700300137000
+/V=C904.4
+/P=transactionId
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:42:13NICOLAS
+ NNNNN 02615   Cuenta                                            INSNNA000007015200300302021011000000007000700300137000
+/V=C0005.4
+/P=destinationAccount
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:42:13NICOLAS
+ NNNNN 71600   tipoConta                                         INNSNF000176004401960108001000000000148004401680127000
+/V=C0007.4
+/P=destinationAccountType
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-24 10:42:13NICOLAS
+ NNNNN 09104   Alfa de 100                                       INNNNF000007015200300452001011000000007000700300137000
+/?=I260OI270
+/V=C1421.2
+/P=holderName
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-19 08:39:36JOSEGAVA
+ NNNNN 10306   Alf 25                                            INNNNF000007015200300202001011000000007000700300137000
+/?=I260OI270
+/V=C1856.2
+/P=suid
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2021-01-19 08:39:22JOSEGAVA
+ NNNNN 00622   Alfanumer. 20                                     INNNNK000007015200300302001011000000007000700300137000
+/?=I260
+/V=COR-0055
+/P=codeResult
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-11-25 18:59:04NICOLAS
+ NNNNN 09103   Alfa de 100                                       INNNNF000007015200300452001011000000007000700300137000
+/?=I260
+/V="Account "+C1980.1+" is closed."
+/P=result
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-03 19:24:23NICOLAS
+ NNNNN 00622   Alfanumer. 20                                     INNNNK000007015200300302001011000000007000700300137000
+/?=I260YI51
+/V=COR-0013
+/P=codeResult
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-03 19:28:17NICOLAS
+ NNNNN 09103   Alfa de 100                                       INNNNK000007015200300452001011000000007000700300137000
+/?=I260YI51
+/V=The checking account is closed or does not exist in the database.
+/P=result
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-12-04 11:38:41NICOLAS
+*#I250#Conta capital a pagar existe
+*#I260#Abrir conta capital a pagar por juros
+*#I51#Conta Corrente
+*#I270#Valor excede o saldo disponível
+*#I504#Cliente não informado
