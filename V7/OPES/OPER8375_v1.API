@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<operationServiceDefinition>
+<uri>/capital-account/{version}/organization/{organization}/capitalAccount/{capitalAccount}/capital-transfer</uri>
+<description>Resgate Parcial de Capital</description>
+<method>POST</method>
+</operationServiceDefinition>
